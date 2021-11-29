@@ -1,4 +1,4 @@
-def get_rounds(number):
+def get_rounds(number: int) -> list:
     """
 
      :param number: int - current round number.
@@ -8,7 +8,7 @@ def get_rounds(number):
     return [number, number + 1, number + 2]
 
 
-def concatenate_rounds(rounds_1, rounds_2):
+def concatenate_rounds(rounds_1: list, rounds_2: list) -> list:
     """
 
     :param rounds_1: list - first rounds played.
@@ -19,7 +19,7 @@ def concatenate_rounds(rounds_1, rounds_2):
     return rounds_1 + rounds_2
 
 
-def list_contains_round(rounds, number):
+def list_contains_round(rounds: list, number: int) -> bool:
     """
 
     :param rounds: list - rounds played.
@@ -30,7 +30,7 @@ def list_contains_round(rounds, number):
     return number in rounds
 
 
-def card_average(hand):
+def card_average(hand: list) -> float:
     """
 
     :param hand: list - cards in hand.
@@ -40,7 +40,7 @@ def card_average(hand):
     return sum(hand) / len(hand)
 
 
-def approx_average_is_average(hand):
+def approx_average_is_average(hand: list) -> bool:
     """
 
     :param hand: list - cards in hand.
@@ -60,7 +60,7 @@ def approx_average_is_average(hand):
     return False
 
 
-def average_even_is_average_odd(hand):
+def average_even_is_average_odd(hand: list) -> bool:
     """
 
     :param hand: list - cards in hand.
@@ -75,7 +75,7 @@ def average_even_is_average_odd(hand):
     return False
 
 
-def maybe_double_last(hand):
+def maybe_double_last(hand: list) -> list:
     """
 
     :param hand: list - cards in hand.
